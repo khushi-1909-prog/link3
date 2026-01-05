@@ -139,6 +139,33 @@
   color: #555;
   line-height: 1.4;
 }
+ @keyframes popUp {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      top: -10px;
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
 .services-row.single {
   justify-content: center;
 }
@@ -184,6 +211,7 @@
   </main>
 </body>
 </html>
+
 
 
 
